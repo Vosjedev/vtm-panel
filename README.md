@@ -24,13 +24,14 @@ when the screen is full data disapears in the following order:
   (clock never disappears)
 
 ## how to install
+0. Make sure python3 is installed and in the PATH.
 1. Download `panel.py`.
 2. Make sure psutil is installed: `pip install psutil`.
-3. Place `panel.py` in a good location. I do not recommend your downloads folder, but rather something like a scripts folder in your home or user directory.
-4. Configure vtm. Edit the following lines in your config to be like this:
+3. Place `python3 panel.py` in a good location. I do not recommend your downloads folder, but rather something like a scripts folder in your home or user directory.
+4. Configure vtm. Edit the following lines in your config to be like this (replace `/full/path/to/panel.py` with the actual path):
 ```xml
     <panel> <!-- Desktop info panel. -->
-        <cmd = "/full/path/to/panel.py"/> <!-- Command-line to activate. -->
+        <cmd = "python3 /full/path/to/panel.py"/> <!-- Command-line to activate. -->
         <cwd = "/"/> <!-- Working directory. -->
         <height = 1 /> <!-- Desktop space reserved on top. -->
     </panel>
