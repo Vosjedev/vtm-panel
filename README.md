@@ -11,6 +11,8 @@ currently shows:
 - battery (charging, %)
 - date
 - time
+
+Example of the contents:
 ```
 user@hostname                                                 RAM: 33.6% (4123MB) | CPU: 3.2% | Charging, 96% | 2023-01-02 | 11:22:33
 ```
@@ -27,7 +29,7 @@ when the screen is full data disapears in the following order:
 0. Make sure python3 is installed and in the PATH.
 1. Download `panel.py`.
 2. Make sure psutil is installed: `pip install psutil`.
-3. Place `python3 panel.py` in a good location. I do not recommend your downloads folder, but rather something like a scripts folder in your home or user directory.
+3. Place `panel.py` in a good location. I do not recommend your downloads folder, but rather something like a scripts folder in your home or user directory.
 4. Configure vtm. Edit the following lines in your config to be like this (replace `/full/path/to/panel.py` with the actual path):
 ```xml
     <panel> <!-- Desktop info panel. -->
